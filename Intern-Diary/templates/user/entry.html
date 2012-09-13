@@ -1,0 +1,9 @@
+[% WRAPPER "wrapper.tt", title "エントリ" %]
+  <div class = "edit_entry">
+      <h1><a href = "/[% entry.author_name | html %]/">[% entry.author_name | html %]</a>の記事</h1>
+    <div class = "well target drop-shadow round" data-id = "[% entry.id | html %]" data-title = "[% entry.title | html %]">
+    <h3>[% entry.title | html %]</h3>
+    <br>
+    [% entry.body %]
+</div>
+[% END %]

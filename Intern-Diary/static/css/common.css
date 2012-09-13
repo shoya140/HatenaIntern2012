@@ -1,0 +1,157 @@
+body{
+	background-image :url("/images/background.png");
+}
+
+a.white{
+    color:#ffffff;
+}
+
+.well{
+    background-color:#faf3e3;
+    margin: 20px;
+    word-break:break-all;
+}
+
+.board{
+    background-image:url("/images/board.gif");
+}
+
+.in_sidebar{
+    background-color:#fc8d59;
+}
+
+.scrap_item{
+    background-color:#faf3e3;
+}
+
+#sidebar{
+    background-image:url("/images/sidebar_off.png");
+    color:#ffffff;
+}
+
+#sidebar_edit{
+    background-image:url("/images/sidebar_edit_off.png");
+    color:#ffffff;
+}
+
+pre{
+    background-color:#ffffff;
+}
+
+h1{
+    padding-bottom:20px;
+}
+
+.entries{
+    padding-top:20px;
+    padding-bottom:20px;
+}
+
+.edit_entry{
+    padding-top:20px;
+    padding-bottom:20px;
+}
+
+.grid-content {
+/*    overflow: hidden;*/
+/*    width: 1000px;*/
+    height: 1000px;  
+}  
+.grid-content div {
+    overflow:hidden;
+    width:176px;
+/*    height:50px;*/
+    padding:30px 10px;
+/*    max-width: 200px;  */
+    max-height: 300px;
+/*    padding: 30px 20px;  */
+    margin: 5px;
+}
+
+.kadomaru {
+	border-radius: 5px;         /* CSS3 */
+	-moz-border-radius: 5px;    /* Firefox */
+	-webkit-border-radius: 5px; /* Safari,Chrome */
+}
+
+.kadomaru_shadow{
+	border-radius: 5px;         /* CSS3 */
+	-moz-border-radius: 5px;    /* Firefox */
+	-webkit-border-radius: 5px; /* Safari,Chrome */
+	box-shadow:0 1px 1px rgba(0, 0, 0, 0.3);
+	-moz-box-shadow:0 1px 1px rgba(0, 0, 0, 0.3);
+	-webkit-box-shadow:0 1px 1px rgba(0, 0, 0, 0.3);
+}
+
+.kadomaru_line {
+	border-radius: 3px;         /* CSS3 */
+	-moz-border-radius: 3px;    /* Firefox */
+	-webkit-border-radius: 3px; /* Safari,Chrome */
+	border: 3px #b0c4de solid;    /* 枠線の装飾 */
+}
+
+.highlight{
+	background: #fbf8e9;
+	-o-transition: all 0.1s ease-in-out;
+	-webkit-transition: all 0.1s ease-in-out;
+	-moz-transition: all 0.1s ease-in-out;
+	-ms-transition: all 0.1s ease-in-out;
+	transition: all 0.1s ease-in-out;
+}
+
+.drop-shadow {
+    position:relative;
+    -webkit-box-shadow:0 1px 4px rgba(0, 0, 0, 0.3), 0 0 60px rgba(0, 0, 0, 0.1) inset;
+    -moz-box-shadow:0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
+    box-shadow:0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
+}
+ 
+.drop-shadow:before,
+.drop-shadow:after {
+    content:"";
+    position:absolute;
+    z-index:-2;
+    bottom:15px;
+    left:10px;
+    width:50%;
+    height:20%;
+}
+ 
+.drop-shadow:after{
+    right:10px;
+    left:auto;
+}
+
+.round {
+    -moz-border-radius:4px;
+    border-radius:4px;
+}
+ 
+.round:before,
+.round:after {
+    max-width:300px;
+    -webkit-box-shadow:0 15px 10px rgba(0, 0, 0, 0.7);
+    -moz-box-shadow:0 15px 10px rgba(0, 0, 0, 0.7);
+    box-shadow:0 15px 10px rgba(0, 0, 0, 0.7);
+    -webkit-transform:rotate(-3deg);
+    -moz-transform:rotate(-3deg);
+    -o-transform:rotate(-3deg);
+    transform:rotate(-3deg);
+}
+ 
+.round:after {
+    -webkit-transform:rotate(3deg);
+    -moz-transform:rotate(3deg);
+    -o-transform:rotate(3deg);
+    transform:rotate(3deg);
+}
+
+.raised:before {
+    width:auto;
+    right:10px;
+    left:10px;
+    bottom:0;
+    -webkit-box-shadow:0 8px 10px rgba(0, 0, 0, 0.5);
+    -moz-box-shadow:0 8px 10px rgba(0, 0, 0, 0.5);
+    box-shadow:0 8px 10px rgba(0, 0, 0, 0.5);
+}

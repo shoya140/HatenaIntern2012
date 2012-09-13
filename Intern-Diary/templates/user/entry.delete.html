@@ -1,0 +1,18 @@
+[% WRAPPER "wrapper.tt", title "エントリの削除" %]
+  <div class = "edit_entry">
+    <h2>以下のエントリを削除しますか？</h2>
+      <div class = "well drop-shadow raised">
+        <h3>タイトル</h3>
+        <p>[% entry.title | html %]</p>
+        <h3>本文</h3>
+        <p>[% entry.body %]</p>
+
+        <form method = "POST" action = "">
+          <input type = "hidden" name = "id" value = "[% entry.id | html %]">
+        </div>
+        <div align="center">
+        <button type="submit" class = "btn btn-danger" style = "padding: 20px 50px;"><font size ="4">削除する</font></button>
+        </div>
+        </form>
+  </div>
+[% END %]

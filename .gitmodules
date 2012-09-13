@@ -1,0 +1,12 @@
+[submodule "Intern-Diary-WAF/modules/DBIx-MoCo"]
+	path = Intern-Diary-WAF/modules/DBIx-MoCo
+	url = https://github.com/hatena/DBIx-MoCo
+[submodule "Intern-Diary/modules/DBIx-MoCo"]
+	path = Intern-Diary/modules/DBIx-MoCo
+	url = https://github.com/hatena/DBIx-MoCo
+[submodule "Intern-Diary-WAF/modules/Ridge"]
+	path = Intern-Diary-WAF/modules/Ridge
+	url = https://github.com/hatena/Ridge
+[submodule "Intern-Diary/modules/Ridge"]
+	path = Intern-Diary/modules/Ridge
+	url = https://github.com/hatena/Ridge

@@ -1,0 +1,26 @@
+[% WRAPPER "wrapper.tt", title "みんなの書いた記事" %]
+  <div class = "entries">
+    <h1>みんなの記事</h1>
+      [% IF entries.size %]
+        [% FOR entry IN entries %]
+          <div class = "well target drop-shadow round" data-id = "[% entry.id | html %]" data-title = "[% entry.title | html %]">
+            <h3><a href = "/[% entry.author_name %]/entry?id=[% entry.id %]">[% entry.title | html %]</a></h3>
+            <p>[% entry.createdTime | html %] [author:<a href = "/[% entry.author_name %]/">[% entry.author_name | html %]</a>]</p>
+            <p>[% entry.body %]</p>
+          </div>
+        [% END %]
+      [% ELSE %]
+        <p>エントリはありません。</p>
+      [% END %]
+    </div>
+    <div align="center" style="padding-bottom:30px">
+      [% IF before_page != 0 %]
+        <a href = "?page=[% before_page %]"><button class = "btn" style = "padding:10px 20px 10px 20px";>前へ</button></a>
+      [% ELSE %]
+      [% END %]
+      [% IF entries.size == limit %]
+        <a href = "?page=[% next_page %]"><button class = "btn" style = "padding:10px 20px 10px 20px";>次へ</button></a>
+      [% ELSE %]
+      [% END %]
+  </div>
+[% END %]

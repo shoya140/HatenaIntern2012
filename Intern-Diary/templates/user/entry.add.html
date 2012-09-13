@@ -1,0 +1,16 @@
+[% WRAPPER "wrapper.tt", title "エントリ編集" %]
+  <div class = "edit_entry">
+    <form method = "POST" action = "">
+      <h2>本文には はてな記法(Ver0.20)が使えます。</h2>
+        <div class = "well drop-shadow raised">
+          <h3>タイトル</h3>
+          <p><input type = "text" class = "span8" name = "title" value="[% entry.title | html %]"></p>
+          <h3>本文</h3>
+          <p><textarea class = "span8" rows = "20" name = "body">[% entry.body | html %]</textarea></p>
+        </div>
+      <div align="center">
+          <button type="submit" class = "btn btn-success" style = "padding: 20px 50px;"><font size ="4">送信する</font></button>
+      </div>
+    </form>
+  </div>
+[% END %]
